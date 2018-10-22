@@ -43,7 +43,7 @@ require('./app/routes/product/blush.routes.js')(app);
 require('./app/routes/product/lipstick.routes.js')(app);
 
 // listen for requests
-app.listen(process.env.PORT || 8080, () => {
+var server = app.listen(process.env.PORT || 8080, () => {
     var port = server.address().port;
     console.log("Server is listening on port " + port);
 });

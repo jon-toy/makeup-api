@@ -1,0 +1,315 @@
+{
+	"info": {
+		"_postman_id": "90774e3e-5762-4475-85d8-dd082cfba2a1",
+		"name": "Makeup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Eyeshadow",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Modern Rennaisance\",\n    \"brand\": \"Anastasia\",\n    \"eyeshadow\": [ \n        {\n            \"Color\": {\n                \"color\": \"blue\",\n                \"finish\": \"matte\"\n            },\n            \"compositionType\": \"Pressed\"\n        },\n        {\n            \"Color\":  {\n                \"color\": \"green\",\n                \"finish\": \"shimmer\"\n            },\n            \"compositionType\": \"Pressed\"\n        }  \n    ],\n    \"notes\": [\n        \"The purple sucks\",\n        \"I bought this in 2002\"\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/product/eyeshadow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"eyeshadow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Eyeshadow Collection",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/product/eyeshadow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"eyeshadow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Eyeshadow",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/product/eyeshadow/5bcd5387fc7234444dd8f020",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"eyeshadow",
+						"5bcd5387fc7234444dd8f020"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Eyeshadow Singleton",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/product/eyeshadow/5bcd5389fc7234444dd8f023",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"eyeshadow",
+						"5bcd5389fc7234444dd8f023"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Blush",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Narcissist\",\n    \"brand\": \"NARS\",\n    \"blush\": [ \n        {\n            \"Color\": {\n                \"color\": \"blue\",\n                \"finish\": \"matte\"\n            },\n            \"compositionType\": \"Cream\",\n            \"intensity\": 1\n        },\n        {\n            \"Color\":  {\n                \"color\": \"green\",\n                \"finish\": \"shimmer\"\n            },\n            \"compositionType\": \"Pressed Powder\",\n            \"intensity\": 2\n        }  \n    ],\n    \"notes\": [\n        \"The purple sucks\",\n        \"I bought this in 2002\"\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/product/blush",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"blush"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Blush Collection",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/product/blush",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"blush"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Blush",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/product/blush/5bcd559979b1fc45c935dce9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"blush",
+						"5bcd559979b1fc45c935dce9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Blush Singleton",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/product/blush/5bcd560f79b1fc45c935dcec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"blush",
+						"5bcd560f79b1fc45c935dcec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Lipstick Collection",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/product/lipstick",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"lipstick"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Lipstick",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/product/lipstick/5bcd5756a3af9c470a5a519b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"lipstick",
+						"5bcd5756a3af9c470a5a519b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Lipstick",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Fig\",\n    \"brand\": \"Bite\",\n    \"lipstick\": [ \n        {\n            \"Color\": {\n                \"color\": \"blue\",\n                \"finish\": \"matte\"\n            },\n            \"compositionType\": \"Gel\",\n            \"applicator\": \"Bullet\"\n        }\n    ],\n    \"notes\": [\n        \"The purple sucks\",\n        \"I bought this in 2002\"\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/product/lipstick",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"lipstick"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Lipstick Singleton",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/product/lipstick/5bcd576bc6d5cc4718d24d7e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"lipstick",
+						"5bcd576bc6d5cc4718d24d7e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,21 +1,21 @@
 {
-  "name": "waypoint-api",
+  "name": "makeup-api",
   "version": "1.0.0",
-  "description": "API Backend for Project Waypoint",
+  "description": "REST API for Jess's Makeup project",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/projectwaypoint/waypoint-api.git"
+    "url": "git+https://github.com/jon-toy/makeup-api.git"
   },
   "author": "Jon Toy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/projectwaypoint/waypoint-api/issues"
+    "url": "https://github.com/jon-toy/makeup-api/issues"
   },
-  "homepage": "https://github.com/projectwaypoint/waypoint-api#readme",
+  "homepage": "https://github.com/jon-toy/makeup-api#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
